@@ -1,0 +1,36 @@
+.dialog-pane {
+    -fx-background-color:  #010B20;
+}
+
+.dialog-pane .label {
+    -fx-text-fill:  #98B9FF;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color:  #010B20;
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-style: italic;
+    -fx-font-size: 2em;
+}
+
+
+.column-header {
+    -fx-text-background-color: #98B9FF;
+    -fx-background-color: #010B20;
+}
+.table-row-cell{
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-background-insets: 0, 0 0 0 0;
+    
+}
+ 
+ 
+.table-row-cell:selected {
+    -fx-text-background-color: #98B9FF;
+    -fx-background-color: #010B20;
+    -fx-table-cell-border-color: transparent;
+    -fx-background-insets: 0, 0 0 0 0;
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #98B9FF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurant.DashboardController">
+   <children>
+      <AnchorPane fx:id="head" prefHeight="40.0" prefWidth="700.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="296.5" layoutY="6.0" text="Restaurant" textFill="#010b20" AnchorPane.topAnchor="6.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="660.0" layoutY="-4.0" onMouseClicked="#closeAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="file:/../resources/close_window_32px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="646.0" layoutY="4.0" onMouseClicked="#restoreAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="file:/../resources/restore_window_32px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" onMouseClicked="#minimAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="file:/../resources/minimize_window_32px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="menu" layoutY="40.0" prefHeight="460.0" prefWidth="150.0" style="-fx-background-color: #010B20; -fx-background-radius: 0 20 20 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <VBox layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" spacing="12.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="buttonFoods" maxWidth="1.7976931348623157E308" minHeight="33.0" mnemonicParsing="false" onAction="#FoodsAction" prefHeight="33.0" style="-fx-background-color: #98B9FF; -fx-background-radius: 20 0 0 20;" text="Foods" textAlignment="JUSTIFY" textFill="#010b20">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonDrinks" layoutX="10.0" layoutY="35.0" maxWidth="1.7976931348623157E308" minHeight="33.0" mnemonicParsing="false" onAction="#DrinksAction" prefHeight="33.0" style="-fx-background-radius: 20 0 0 20; -fx-background-color: #010B20;" text="Drinks" textAlignment="JUSTIFY" textFill="#98b9ff">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonOrders" layoutX="10.0" layoutY="80.0" maxWidth="1.7976931348623157E308" minHeight="33.0" mnemonicParsing="false" onAction="#OrdersAction" prefHeight="33.0" style="-fx-background-color: translte; -fx-background-radius: 20 0 0 20;" text="Orders" textAlignment="JUSTIFY" textFill="#98b9ff">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
